@@ -1,23 +1,13 @@
-package ejerciciosparte1;
+package ejparte1;
 
-public class EjercicioA3 {
+public class EjercicioB3 {
 
 	public static void main(String[] args) {
 		
-		Rectangulo rectangulo1 = new Rectangulo();
-		Rectangulo rectangulo2 = new Rectangulo();
+		ClaseRectangulo rectangulo1 = new ClaseRectangulo(0, 0, 5, 5);
+		ClaseRectangulo rectangulo2 = new ClaseRectangulo(7, 9, 2, 3);
 		int[] r1 = new int[2];
 		int[] r2 = new int[2];
-		
-		rectangulo1.x1 = 0;
-		rectangulo1.y1 = 0;
-		rectangulo1.x2 = 5;
-		rectangulo1.y2 = 5;
-		
-		rectangulo2.x1 = 7;
-		rectangulo2.y1 = 9;
-		rectangulo2.x2 = 2;
-		rectangulo2.y2 = 3;
 		
 		r1[0] = rectangulo1.x1 > rectangulo1.x2 ? rectangulo1.x1 - rectangulo1.x2 : rectangulo1.x2 - rectangulo1.x1;
 		r1[1] = rectangulo1.y1 > rectangulo1.y2 ? rectangulo1.y1 - rectangulo1.y2 : rectangulo1.y2 - rectangulo1.y1;

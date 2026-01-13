@@ -1,43 +1,45 @@
-package ejerciciosparte1;
+package ejparte1;
 
 import java.util.Scanner;
 
-public class EjercicioA2 {
+public class EjercicioB2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		Persona persona1 = new Persona();
-		Persona persona2 = new Persona();
-		String mayoredad = "";
-		
 		System.out.println("PERSONA 1");
 		
 		System.out.println("Introduce DNI: ");
-		persona1.dni = sc.nextLine();
+		String dni = sc.nextLine();
 		System.out.println("Introduce nombre: ");
-		persona1.nombre = sc.nextLine();
+		String nombre = sc.nextLine();
 		System.out.println("Introduce primer apellido: ");
-		persona1.apellido1 = sc.nextLine();
+		String apellido1 = sc.nextLine();
 		System.out.println("Introduce segundo apellido: ");
-		persona1.apellido2 = sc.nextLine();
+		String apellido2 = sc.nextLine();
 		System.out.println("Introduce edad: ");
-		persona1.edad = sc.nextInt();
+		int edad = sc.nextInt();
+
+		ClasePersona persona1 = new ClasePersona(nombre, apellido1, apellido2, dni, edad);
 		
 		sc.nextLine();
 		
 		System.out.println("PERSONA 2");
 		
 		System.out.println("Introduce DNI: ");
-		persona2.dni = sc.nextLine();
+		dni = sc.nextLine();
 		System.out.println("Introduce nombre: ");
-		persona2.nombre = sc.nextLine();
+		nombre = sc.nextLine();
 		System.out.println("Introduce primer apellido: ");
-		persona2.apellido1 = sc.nextLine();
+		apellido1 = sc.nextLine();
 		System.out.println("Introduce segundo apellido: ");
-		persona2.apellido2 = sc.nextLine();
+		apellido2 = sc.nextLine();
 		System.out.println("Introduce edad: ");
-		persona2.edad = sc.nextInt();
+		edad = sc.nextInt();
+		
+		ClasePersona persona2 = new ClasePersona(nombre, apellido1, apellido2, dni, edad);
+
+		String mayoredad = "";
 		
 		if (persona1.edad < 18) {
 			mayoredad = " no";
